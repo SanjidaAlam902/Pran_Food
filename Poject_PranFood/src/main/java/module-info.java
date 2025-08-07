@@ -5,4 +5,8 @@ module com.example.poject_pranfood {
 
     opens com.example.poject_pranfood to javafx.fxml;
     exports com.example.poject_pranfood;
+    exports com.example.poject_pranfood.JobSeekers;
+    opens com.example.poject_pranfood.JobSeekers to javafx.fxml;
+    exports com.example.poject_pranfood.BusinessPartners;
+    opens com.example.poject_pranfood.BusinessPartners to javafx.fxml;
 }

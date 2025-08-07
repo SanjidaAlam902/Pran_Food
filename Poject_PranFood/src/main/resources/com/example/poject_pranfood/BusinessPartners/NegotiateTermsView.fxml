@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="522.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.BusinessPartners.NegotiateTermsView">
+   <children>
+      <Label layoutX="245.0" layoutY="54.0" style="-fx-font-size: 20;" text="Negotiate Contract Terms">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="146.0" layoutY="143.0" text="Select Contract" />
+      <Label layoutX="150.0" layoutY="209.0" text="Your Message" />
+      <ComboBox fx:id="NegotiateTermsContractSelectComboBox" layoutX="291.0" layoutY="139.0" prefWidth="150.0" />
+      <TextArea fx:id="NegotiateMessageTextArea" layoutX="291.0" layoutY="203.0" prefHeight="151.0" prefWidth="344.0" />
+      <Button layoutX="313.0" layoutY="421.0" mnemonicParsing="false" onAction="#OnClickSendNegotiateMessage" text="Send Message" />
+   </children>
+</AnchorPane>

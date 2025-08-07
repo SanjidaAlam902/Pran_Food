@@ -1,6 +1,8 @@
 package com.example.poject_pranfood.JobSeekers;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 
 public class OnlineAssessmentView
 {

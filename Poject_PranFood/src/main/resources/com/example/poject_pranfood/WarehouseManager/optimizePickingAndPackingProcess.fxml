@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.WarehouseManager.OptimizePickingAndPackingProcessController">
+   <children>
+      <Label layoutX="115.0" layoutY="23.0" text="Optimize Picking and Packing process">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="85.0" text="Item Code" />
+      <Label layoutX="52.0" layoutY="123.0" text="Item Name" />
+      <Label layoutX="56.0" layoutY="156.0" text="Location" />
+      <Label layoutX="56.0" layoutY="192.0" text="Picked" />
+      <Label layoutX="66.0" layoutY="312.0" text="Show Result" />
+      <Label fx:id="outputLabel" layoutX="180.0" layoutY="284.0" prefHeight="96.0" prefWidth="383.0" />
+      <Button layoutX="47.0" layoutY="233.0" mnemonicParsing="false" onAction="#saveInfoOA" text="Save Info" />
+      <TextField fx:id="itemCodeTF" layoutX="139.0" layoutY="81.0" />
+      <TextField fx:id="itemNameTF" layoutX="140.0" layoutY="119.0" />
+      <TextField fx:id="locationTF" layoutX="141.0" layoutY="152.0" />
+      <ComboBox fx:id="pickedCB" layoutX="141.0" layoutY="188.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.WarehouseManager.AssignTasksToWarehouseStaffController">
+   <children>
+      <Label layoutX="111.0" layoutY="45.0" prefHeight="35.0" prefWidth="454.0" text="Assign Tasks To Warehouse Staff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="100.0" text="Staff Name" />
+      <Label layoutX="66.0" layoutY="132.0" text="Task Name" />
+      <Label layoutX="67.0" layoutY="162.0" text="Location" />
+      <Label layoutX="66.0" layoutY="191.0" text="Deadline" />
+      <TextField fx:id="staffNameTF" layoutX="164.0" layoutY="96.0" />
+      <TextField fx:id="locationTF" layoutX="165.0" layoutY="158.0" />
+      <ComboBox fx:id="taskNameCB" layoutX="164.0" layoutY="128.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="153.0" layoutY="187.0" />
+      <Button layoutX="73.0" layoutY="231.0" mnemonicParsing="false" onAction="#assignStaffOA" text="Assign Staff" />
+      <TableView fx:id="assignTableView" layoutX="-1.0" layoutY="278.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="staffNameCol" prefWidth="148.80005186796188" text="Staff Name" />
+          <TableColumn fx:id="TaskNameCol" prefWidth="133.59996032714844" text="Task Name" />
+            <TableColumn fx:id="locationCol" prefWidth="143.199951171875" text="Location" />
+            <TableColumn fx:id="deadlineCol" prefWidth="175.20001220703125" text="Deadline" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

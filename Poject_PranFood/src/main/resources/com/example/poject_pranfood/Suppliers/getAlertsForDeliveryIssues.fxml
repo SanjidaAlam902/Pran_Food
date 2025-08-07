@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.Suppliers.GetAlertsForDeliveryIssuesController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Delivery Issues " />
+      <TableView fx:id="deliveryIssuesTable" layoutX="24.0" layoutY="224.0" prefHeight="200.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="deliveryIdDIssuesCol" prefWidth="141.5999755859375" text="Delivery ID" />
+          <TableColumn fx:id="dateDIssuesCol" prefWidth="127.20001220703125" text="Date" />
+            <TableColumn fx:id="alertTypeDIssuesCol" prefWidth="144.0" text="Alert Type" />
+            <TableColumn fx:id="statusDIssuesCol" prefWidth="142.39990234375" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="71.0" text="Searching Alerts:" />
+      <Label layoutX="29.0" layoutY="114.0" text="Date:" />
+      <Label layoutX="27.0" layoutY="141.0" text="Status:" />
+      <ComboBox fx:id="alertTypeDeliveryComboBox" layoutX="93.0" layoutY="172.0" prefWidth="150.0" />
+      <DatePicker fx:id="deliveryIssuesDate" layoutX="68.0" layoutY="110.0" />
+      <CheckBox fx:id="solvedStatusDeliveryCheckBox" layoutX="71.0" layoutY="141.0" mnemonicParsing="false" text="Solved" />
+      <CheckBox fx:id="unsolvedStatusDeliveryCheckBox" layoutX="132.0" layoutY="141.0" mnemonicParsing="false" text="Unsolved" />
+      <TextField fx:id="searchingAlertsTextField" layoutX="129.0" layoutY="71.0" />
+      <Label layoutX="27.0" layoutY="176.0" text="Alert Type:" />
+      <Button layoutX="300.0" layoutY="172.0" mnemonicParsing="false" onAction="#searchDeliveryIssuesOnClick" text="Search" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.Suppliers.ViewPaymentHistoryController">
+   <children>
+      <Label layoutX="21.0" layoutY="20.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Payment History" />
+      <Label layoutX="28.0" layoutY="59.0" text="Payment Status:" />
+      <ComboBox fx:id="paymentStatusComboBox" layoutX="118.0" layoutY="55.0" prefWidth="150.0" />
+      <Label layoutX="28.0" layoutY="103.0" text="Message:" />
+      <Label fx:id="validateLabelPaymentHistory" layoutX="86.0" layoutY="91.0" prefHeight="38.0" prefWidth="190.0" wrapText="true" />
+      <Button layoutX="287.0" layoutY="108.0" mnemonicParsing="false" onAction="#submitPaymentHistoryOnClick" text="Submit" />
+      <TableView fx:id="paymentHistoryTable" layoutX="18.0" layoutY="137.0" prefHeight="238.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="paymentIdCol" prefWidth="158.4000244140625" text="Payment ID" />
+          <TableColumn fx:id="amountCol" prefWidth="209.60003662109375" text="Amount" />
+            <TableColumn fx:id="paymentStatusCol" prefWidth="191.20001220703125" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="325.0" layoutY="59.0" text="Payment ID:" />
+      <Label layoutX="334.0" layoutY="86.0" text="Amount:" />
+      <TextField fx:id="paymentIdTextField" layoutX="393.0" layoutY="55.0" />
+      <TextField fx:id="amountPaymentTextField" layoutX="389.0" layoutY="87.0" />
+   </children>
+</AnchorPane>

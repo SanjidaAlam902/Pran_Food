@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.Customer.CustomerBrowseProducts">
+   <children>
+      <Button fx:id="btnLoadProducts" layoutX="204.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleLoadProducts" prefHeight="40.0" prefWidth="192.0" text="Load Products" />
+      <TableView fx:id="tblProducts" layoutX="94.0" layoutY="110.0" prefHeight="200.0" prefWidth="407.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="144.0" text="Products Name" />
+          <TableColumn fx:id="colPrice" prefWidth="125.0" text="Price" />
+            <TableColumn fx:id="colCategory" prefWidth="137.0" text="Category" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

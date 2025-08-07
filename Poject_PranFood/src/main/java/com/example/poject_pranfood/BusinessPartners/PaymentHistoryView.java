@@ -1,5 +1,9 @@
 package com.example.poject_pranfood.BusinessPartners;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class PaymentHistoryView
 {
     @javafx.fxml.FXML

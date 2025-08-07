@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="passHygieneStatus" prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poject_pranfood.ProductionStaff.QualityCheckFinishedGoodsController">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Quality Check Finished Goods" />
+      <Label layoutX="20.0" layoutY="57.0" text="Batch Id:" />
+      <Label layoutX="20.0" layoutY="90.0" text="Weight Accuracy:" />
+      <Label layoutX="357.0" layoutY="57.0" text="Packaging Seal:" />
+      <Label layoutX="20.0" layoutY="122.0" text="Labeling Status:" />
+      <Label layoutX="357.0" layoutY="90.0" text="Hygiene Status:" />
+      <TextField fx:id="batchIdQCFGTextField" layoutX="69.0" layoutY="53.0" />
+      <TextField fx:id="weightAccuracyQCFGTextField" layoutX="115.0" layoutY="86.0" />
+      <ComboBox fx:id="labelingStatusQCFGComboBox" layoutX="107.0" layoutY="118.0" prefWidth="150.0" />
+      <RadioButton fx:id="passPackagingSealRadio" layoutX="442.0" layoutY="57.0" mnemonicParsing="false" text="Pass">
+         <toggleGroup>
+            <ToggleGroup fx:id="packagingSeal" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="failPackagingSealRadio" layoutX="492.0" layoutY="57.0" mnemonicParsing="false" text="Fail" toggleGroup="$packagingSeal" />
+      <RadioButton layoutX="443.0" layoutY="91.0" mnemonicParsing="false" text="Pass">
+         <toggleGroup>
+            <ToggleGroup fx:id="hygineneStatus" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="failHygieneStatus" layoutX="493.0" layoutY="89.0" mnemonicParsing="false" text="Fail" toggleGroup="$hygineneStatus" />
+      <Button layoutX="357.0" layoutY="118.0" mnemonicParsing="false" onAction="#submitQualityCheckFinishedGoodsOnClick" text="Submit" />
+      <Label fx:id="batchIdQCFGTextField" layoutX="20.0" layoutY="162.0" text="Quality Check Status:" />
+      <TextArea fx:id="qualityCheckFinishGoodsValidateLabel" layoutX="138.0" layoutY="162.0" prefHeight="119.0" prefWidth="323.0" />
+   </children>
+</AnchorPane>

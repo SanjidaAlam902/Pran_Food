@@ -1,50 +1,76 @@
 package com.example.poject_pranfood.BusinessPartners;
 
+
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class BusinessPartnersDashboardView
-{
-    @javafx.fxml.FXML
-    public void initialize() {
+public class BusinessPartnersDashboardView {
+
+    /**
+     * Helper method to load and display a new scene from the given FXML file.
+     */
+    private void loadScene(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project_pranfood/" + fxmlFile));
+            Stage stage = new Stage();
+            stage.setTitle(fxmlFile.replace(".fxml", ""));
+            stage.setScene(new Scene(loader.load()));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    @javafx.fxml.FXML
-    public void OnClickTenderNotificationPreferences(ActionEvent actionEvent) {
+    @FXML
+    void OnClickDownloadReports(ActionEvent event) {
+        loadScene("DownloadReportView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickTrackContracts(ActionEvent actionEvent) {
+    @FXML
+    void OnClickLogOutNavigate(ActionEvent event) {
+        loadScene("LogIn.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickViewTenders(ActionEvent actionEvent) {
+    @FXML
+    void OnClickNegotiateTerms(ActionEvent event) {
+        loadScene("NegotiateTermsView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickSubmitProposal(ActionEvent actionEvent) {
+    @FXML
+    void OnClickSignInNavigate(ActionEvent event) {
+        loadScene("LogIn.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickSignInNavigate(ActionEvent actionEvent) {
+    @FXML
+    void OnClickSubmitProposal(ActionEvent event) {
+        loadScene("SubmitProposalView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickDownloadReports(ActionEvent actionEvent) {
+    @FXML
+    void OnClickSubmitSamples(ActionEvent event) {
+        loadScene("SampleSubmitView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickLogOutNavigate(ActionEvent actionEvent) {
+    @FXML
+    void OnClickTenderNotificationPreferences(ActionEvent event) {
+        loadScene("TenderNotificationPreferencesView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickViewPayments(ActionEvent actionEvent) {
+    @FXML
+    void OnClickTrackContracts(ActionEvent event) {
+        loadScene("TrackContractsView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickNegotiateTerms(ActionEvent actionEvent) {
+    @FXML
+    void OnClickViewPayments(ActionEvent event) {
+        loadScene("PaymentHistoryView.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickSubmitSamples(ActionEvent actionEvent) {
+    @FXML
+    void OnClickViewTenders(ActionEvent event) {
+        loadScene("ViewTendersView.fxml");
     }
 }

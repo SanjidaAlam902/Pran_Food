@@ -1,43 +1,54 @@
 package com.example.poject_pranfood.JobSeekers;
 
-import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 
-public class OnlineAssessmentView
-{
-    @javafx.fxml.FXML
-    private RadioButton Q2RightAnsRadioButton;
-    @javafx.fxml.FXML
-    private RadioButton Q4WrongAnsRadioButton;
-    @javafx.fxml.FXML
-    private RadioButton Q3RightAnsRadioButton;
-    @javafx.fxml.FXML
-    private RadioButton Q5WrongAnsRadioButton;
-    @javafx.fxml.FXML
-    private RadioButton Q1RightAnsRadioButton;
-    @javafx.fxml.FXML
-    private RadioButton Q4RightAnsRadioButton;
-    @javafx.fxml.FXML
+public class OnlineAssessmentView {
+
+    @FXML
     private Label MarksShowLabel;
-    @javafx.fxml.FXML
-    private RadioButton Q5RightAnsRadioButton;
-    @javafx.fxml.FXML
-    private RadioButton Q3WrongAnsRadioButton;
-    @javafx.fxml.FXML
+
+    // Question 1
+    @FXML
+    private RadioButton Q1RightAnsRadioButton;
+    @FXML
     private RadioButton Q1WrongAnsRadioButton;
-    @javafx.fxml.FXML
+
+    // Question 2
+    @FXML
+    private RadioButton Q2RightAnsRadioButton;
+    @FXML
     private RadioButton Q2WrongAnsRadioButton;
 
-    @javafx.fxml.FXML
-    public void initialize() {
-    }
+    // Question 3
+    @FXML
+    private RadioButton Q3RightAnsRadioButton;
+    @FXML
+    private RadioButton Q3WrongAnsRadioButton;
 
-    @Deprecated
-    public void OnClickAssessmentSubmit(ActionEvent actionEvent) {
-    }
+    // Question 4
+    @FXML
+    private RadioButton Q4RightAnsRadioButton;
+    @FXML
+    private RadioButton Q4WrongAnsRadioButton;
 
-    @javafx.fxml.FXML
-    public void OnClickAssessmentSubmitToCheck(ActionEvent actionEvent) {
+    // Question 5
+    @FXML
+    private RadioButton Q5RightAnsRadioButton;
+    @FXML
+    private RadioButton Q5WrongAnsRadioButton;
+
+    @FXML
+    public void OnClickAssessmentSubmitToCheck() {
+        int score = 0;
+
+        if (Q1RightAnsRadioButton.isSelected()) score++;
+        if (Q2RightAnsRadioButton.isSelected()) score++;
+        if (Q3RightAnsRadioButton.isSelected()) score++;
+        if (Q4RightAnsRadioButton.isSelected()) score++;
+        if (Q5RightAnsRadioButton.isSelected()) score++;
+
+        MarksShowLabel.setText(score + "/5");
     }
 }

@@ -1,48 +1,67 @@
 package com.example.poject_pranfood.JobSeekers;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.AnchorPane;
 
-public class JobSeekerDashboard
-{
-    @javafx.fxml.FXML
-    public void initialize() {
+public class JobSeekerDashboard {
+
+    @FXML
+    private AnchorPane dashboardContentPane; // Placeholder for loading pages
+
+    private void loadPage(String fxmlFile) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
+            AnchorPane view = fxmlLoader.load();
+            dashboardContentPane.getChildren().setAll(view); // Replace content
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-
-    @javafx.fxml.FXML
-    public void OnClickSignInNavigate(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void OnClickLogOutNavigate(ActionEvent actionEvent) {
-    }
-
-
-    @javafx.fxml.FXML
-    public void OnClickScheduleInterviewNavi(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void OnClickApplyForJobsNavi(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
+    @FXML
     public void OnClickBrowseJobNavi(ActionEvent actionEvent) {
+        loadPage("BrowseJobViewSeeker.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void OnClickMyTestNavi(ActionEvent actionEvent) {
+    @FXML
+    public void OnClickApplyForJobsNavi(ActionEvent actionEvent) {
+        loadPage("ApplyForJobViewSeeker.fxml");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void OnClickMyApplicationsNavi(ActionEvent actionEvent) {
+        loadPage("MyApplicationsViewSeeker.fxml");
     }
 
-    @javafx.fxml.FXML
+    @FXML
+    public void OnClickMyTestNavi(ActionEvent actionEvent) {
+        loadPage("OnlineAssessmentViewSeeker.fxml");
+    }
+
+    @FXML
+    public void OnClickScheduleInterviewNavi(ActionEvent actionEvent) {
+        loadPage("ScheduleInterviewViewSeeker.fxml");
+    }
+
+    @FXML
     public void OnClickJobAlertPreferencesNavi(ActionEvent actionEvent) {
+        loadPage("JobAlertPreferencesViewSeeker.fxml");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void OnClickDownloadTipsResumeGuideNavi(ActionEvent actionEvent) {
+        loadPage("DownloadGuideViewSeeker.fxml");
+    }
+
+    @FXML
+    public void OnClickSignInNavigate(ActionEvent actionEvent) {
+        loadPage("Login.fxml");
+    }
+
+    @FXML
+    public void OnClickLogOutNavigate(ActionEvent actionEvent) {
+        loadPage("Login.fxml");
     }
 }

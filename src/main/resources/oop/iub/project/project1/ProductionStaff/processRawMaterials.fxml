@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.ProductionStaff.ProcessRawMaterialsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Process Raw Materials" />
+      <Label layoutX="20.0" layoutY="55.0" text="Raw Material:" />
+      <Label layoutX="20.0" layoutY="91.0" text="Batch ID:" />
+      <Label layoutX="272.0" layoutY="55.0" text="Processing Time (Hours) :" />
+      <Button layoutX="18.0" layoutY="117.0" mnemonicParsing="false" onAction="#processMaterialsOnClick" text="Process Materials" />
+      <TextField fx:id="rawMaterialPRMTextField" layoutX="102.0" layoutY="51.0" />
+      <TextField fx:id="batchIdPRMTextField" layoutX="72.0" layoutY="87.0" />
+      <Label layoutX="24.0" layoutY="159.0" text="Production Status:" />
+      <TextArea fx:id="productionStatusValidateLabel" layoutX="132.0" layoutY="159.0" prefHeight="87.0" prefWidth="354.0" wrapText="true" />
+      <ComboBox fx:id="processingTimeCb" layoutX="411.0" layoutY="51.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.TrackDeliveryStatusController">
+   <children>
+      <Label layoutX="39.0" layoutY="27.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Track Delivery Status" />
+      <Label layoutX="39.0" layoutY="66.0" style="-fx-font-weight: bold;" text="Delivery ID:" />
+      <TextField fx:id="deliveryIdField" layoutX="115.0" layoutY="62.0" prefHeight="26.0" prefWidth="186.0" promptText="Enter Delivery ID" />
+      <Button layoutX="415.0" layoutY="143.0" mnemonicParsing="false" onAction="#submitStatusOnClick" text="Submit" />
+      <Label layoutX="39.0" layoutY="138.0" style="-fx-font-weight: bold;" text="Current Status:" />
+      <Label fx:id="valStatusLabel" layoutX="339.0" layoutY="49.0" prefHeight="42.0" prefWidth="206.0" wrapText="true" />
+      <TableView fx:id="statusHistoryTable" layoutX="32.0" layoutY="178.0" prefHeight="200.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="deliveryIdCol" prefWidth="102.39999008178711" text="Delivery ID" />
+          <TableColumn fx:id="statusCol" minWidth="5.60003662109375" prefWidth="136.8000030517578" text="Status" />
+            <TableColumn fx:id="statusLocationCol" prefWidth="162.39996337890625" text="Location" />
+            <TableColumn fx:id="dateStatusCol" prefWidth="119.19998779296873" text="Date/Time" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="trackDelDatePicker" layoutX="362.0" layoutY="100.0" />
+      <Label layoutX="323.0" layoutY="104.0" style="-fx-font-weight: bold;" text="Date:" />
+      <Label layoutX="39.0" layoutY="104.0" style="-fx-font-weight: bold;" text="Location:" />
+      <TextField fx:id="locationTField" layoutX="99.0" layoutY="100.0" />
+      <TextField fx:id="currentStatusTextField" layoutX="134.0" layoutY="134.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.SuppliersDashboardController">
+   <children>
+      <Label layoutX="16.0" layoutY="14.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Supplier Dashboard" />
+      <Button layoutX="13.0" layoutY="87.0" mnemonicParsing="false" onAction="#submitMaterialDashboardOnClick" prefHeight="26.0" prefWidth="146.0" text="Submit New  Request" />
+      <Button layoutX="458.0" layoutY="122.0" mnemonicParsing="false" onAction="#trackDelDashboardOnClick" prefHeight="26.0" prefWidth="126.0" text="Track Delivery" />
+      <Button layoutX="16.0" layoutY="122.0" mnemonicParsing="false" onAction="#updateDeliveryInfoDashboardOnClick" prefHeight="26.0" prefWidth="146.0" text="Update Delivery" />
+      <Button layoutX="458.0" layoutY="87.0" mnemonicParsing="false" onAction="#reviewPastDelDashboardOnClick" prefHeight="26.0" prefWidth="125.0" text="Past Deliveries" />
+      <Button layoutX="16.0" layoutY="187.0" mnemonicParsing="false" onAction="#reqUrgentSuppliesDashboardOnClick" prefHeight="26.0" prefWidth="138.0" text="Emergency Request" />
+      <Button layoutX="456.0" layoutY="187.0" mnemonicParsing="false" onAction="#paymentHistoryDashboardOnClick" prefHeight="26.0" prefWidth="126.0" text="Payment History" />
+      <Button layoutX="13.0" layoutY="156.0" mnemonicParsing="false" onAction="#reviewFeedbackDashboardOnClick" prefHeight="26.0" prefWidth="146.0" text="Quality Feedback" />
+      <Button layoutX="456.0" layoutY="156.0" mnemonicParsing="false" onAction="#deliveryIssuesDashboardOnClick" prefHeight="26.0" prefWidth="126.0" text="Delivery Alerts" />
+      <Button layoutX="457.0" layoutY="352.0" mnemonicParsing="false" onAction="#signOutSupplierDashboardOnClick" prefHeight="26.0" prefWidth="115.0" text="Sign Out" />
+   </children>
+</AnchorPane>

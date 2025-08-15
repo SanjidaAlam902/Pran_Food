@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>oop.iub.project</groupId>
-    <artifactId>Project1</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>OopProject</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Project1</name>
+    <name>OopProject</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>oop.iub.project.project1/oop.iub.project.project1.HelloApplication</mainClass>
+                            <mainClass>com.example.oopproject/com.example.oopproject.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

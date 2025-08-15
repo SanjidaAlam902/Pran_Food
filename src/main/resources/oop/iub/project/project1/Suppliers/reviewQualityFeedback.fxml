@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.ReviewQualityFeedbackController">
+   <children>
+      <Label layoutX="21.0" layoutY="8.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Quality Feedback Review" />
+      <Label layoutX="335.0" layoutY="60.0" text="Material Type:" />
+      <ComboBox fx:id="materialTypeQFRComboBox" layoutX="418.0" layoutY="56.0" prefWidth="150.0" />
+      <Label layoutX="48.0" layoutY="51.0" text="Delivery ID:" />
+      <Label layoutX="46.0" layoutY="79.0" text="Quality Score:" />
+      <Label layoutX="48.0" layoutY="124.0" text="Remarks:" />
+      <TextField fx:id="deliveryIdQFRTextField" layoutX="127.0" layoutY="47.0" />
+      <TextField fx:id="qualityScoreQFRTextField" layoutX="125.0" layoutY="77.0" />
+      <TextArea fx:id="remarksQFRTextArea" layoutX="120.0" layoutY="109.0" prefHeight="66.0" prefWidth="194.0" wrapText="true" />
+      <Button layoutX="512.0" layoutY="142.0" mnemonicParsing="false" onAction="#saveQualityFeedbackReviewOnClick" text="Save" />
+      <Label layoutX="46.0" layoutY="200.0" text="Feedback:" />
+      <TextArea fx:id="feedbackStatusTArea" layoutX="108.0" layoutY="194.0" prefHeight="108.0" prefWidth="294.0" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.marketingOfficer.MarketingOfficerDashboardController">
+   <children>
+      <Button layoutX="97.0" layoutY="110.0" mnemonicParsing="false" onAction="#newTrainingMaterialOA" prefHeight="26.0" prefWidth="158.0" text="New Training Material" />
+      <Button layoutX="97.0" layoutY="158.0" mnemonicParsing="false" onAction="#newProductOA" prefHeight="26.0" prefWidth="158.0" text="New Product" />
+      <Button layoutX="97.0" layoutY="213.0" mnemonicParsing="false" onAction="#MarketAvailabilityOA" prefHeight="26.0" prefWidth="158.0" text="Market Availability" />
+      <Button layoutX="97.0" layoutY="264.0" mnemonicParsing="false" onAction="#discountOA" prefHeight="26.0" prefWidth="158.0" text="Discount" />
+      <Button layoutX="383.0" layoutY="110.0" mnemonicParsing="false" onAction="#CreateAdOA" prefHeight="26.0" prefWidth="166.0" text="Create Ad" />
+      <Button layoutX="383.0" layoutY="158.0" mnemonicParsing="false" onAction="#marketingBudgetOA" prefHeight="26.0" prefWidth="166.0" text="Marketing Budget" />
+      <Button layoutX="383.0" layoutY="213.0" mnemonicParsing="false" onAction="#promoteJobsOpportunitiesOA" text="Promote Jobs Opportunities" />
+      <Button layoutX="383.0" layoutY="264.0" mnemonicParsing="false" onAction="#CreateFeedbackOA" prefHeight="26.0" prefWidth="166.0" text="Create Feedback" />
+      <Button layoutX="268.0" layoutY="324.0" mnemonicParsing="false" onAction="#GoBacktoHome" text="Go Back To Home" />
+      <Label layoutX="238.0" layoutY="39.0" text="Dashboard" textFill="#521aec">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

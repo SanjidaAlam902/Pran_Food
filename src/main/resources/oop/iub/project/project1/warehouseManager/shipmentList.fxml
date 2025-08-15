@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.warehouseManager.ShipmentListController">
+   <children>
+      <Label layoutX="195.0" layoutY="36.0" text="Shipment List">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="-46.0" layoutY="71.0" text="Label" />
+      <Label layoutX="59.0" layoutY="106.0" text="Shipment Name" />
+      <Label layoutX="59.0" layoutY="147.0" text="Shipment Order Number" />
+      <Label layoutX="59.0" layoutY="192.0" text="Shipping Date" />
+      <Label layoutX="59.0" layoutY="231.0" text="Destination " />
+      <Button layoutX="65.0" layoutY="260.0" mnemonicParsing="false" onAction="#addShipmentOA" text="Add Shipment" />
+      <TableView fx:id="shipmentListTV" layoutY="301.0" prefHeight="222.0" prefWidth="613.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="154.40002745389938" text="Name" />
+          <TableColumn fx:id="orderNumberCol" prefWidth="127.19993591308594" text="Order Number" />
+            <TableColumn fx:id="dateCol" prefWidth="159.199951171875" text="Date" />
+            <TableColumn fx:id="destinationCol" prefWidth="173.5999755859375" text="Destination" />
+        </columns>
+      </TableView>
+      <TextField fx:id="shipmentNameTA" layoutX="207.0" layoutY="102.0" />
+      <TextField fx:id="shipmentOrderNumberTA" layoutX="208.0" layoutY="143.0" />
+      <TextField fx:id="destinationTA" layoutX="208.0" layoutY="227.0" />
+      <DatePicker fx:id="datePIcker" layoutX="207.0" layoutY="188.0" />
+      <Label fx:id="outputLabel" layoutX="191.0" layoutY="260.0" prefHeight="35.0" prefWidth="316.0" />
+   </children>
+</AnchorPane>

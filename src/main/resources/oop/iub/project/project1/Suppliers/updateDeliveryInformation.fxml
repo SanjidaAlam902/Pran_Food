@@ -10,7 +10,7 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.UpdateDeliveryInformationController">
+<AnchorPane prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.Suppliers.UpdateDeliveryInformationController">
    <children>
       <Label layoutX="27.0" layoutY="30.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Update Delivery Infromation" />
       <Label layoutX="35.0" layoutY="319.0" style="-fx-font-weight: bold;" text="Edit Delivery Information" />

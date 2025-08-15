@@ -1,4 +1,4 @@
-package com.example.oopproject.ProductionStaff;
+package oop.iub.project.project1.ProductionStaff;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

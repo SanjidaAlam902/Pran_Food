@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.SuppliersDashboardController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.Suppliers.SuppliersDashboardController">
    <children>
       <Label layoutX="16.0" layoutY="14.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Supplier Dashboard" />
       <Button layoutX="13.0" layoutY="87.0" mnemonicParsing="false" onAction="#submitMaterialDashboardOnClick" prefHeight="26.0" prefWidth="146.0" text="Submit New  Request" />

@@ -1,4 +1,4 @@
-package com.example.oopproject.Suppliers;
+package oop.iub.project.project1.Suppliers;
 
 import java.io.Serializable;
 import java.time.LocalDate;

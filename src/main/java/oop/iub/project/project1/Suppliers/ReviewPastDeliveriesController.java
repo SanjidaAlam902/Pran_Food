@@ -1,7 +1,7 @@
-package com.example.oopproject.Suppliers;
+package oop.iub.project.project1.Suppliers;
 
-import com.example.oopproject.ProductionStaff.AppendableObjectOutputStream;
-import com.example.oopproject.ProductionStaff.ReceiveMaterialsCls;
+import oop.iub.project.project1.ProductionStaff.AppendableObjectOutputStream;
+import oop.iub.project.project1.ProductionStaff.ReceiveMaterialsCls;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;

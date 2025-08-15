@@ -1,4 +1,4 @@
-package com.example.oopproject.ProductionStaff;
+package oop.iub.project.project1.ProductionStaff;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;

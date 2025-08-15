@@ -1,6 +1,6 @@
-package com.example.oopproject.Suppliers;
+package oop.iub.project.project1.Suppliers;
 
-import com.example.oopproject.HelloApplication;
+import oop.iub.project.project1.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

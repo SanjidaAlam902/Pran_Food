@@ -1,4 +1,4 @@
-package com.example.oopproject.Suppliers;
+package oop.iub.project.project1.Suppliers;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;

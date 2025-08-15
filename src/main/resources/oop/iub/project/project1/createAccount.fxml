@@ -9,7 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.createAccountController">
+<AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.createAccountController">
    <children>
       <Label layoutX="199.0" layoutY="30.0" style="-fx-font-size: 24; -fx-font-weight: bold;" text="Create Account" textFill="#3e28bc" />
       <Label layoutX="20.0" layoutY="83.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="User Information" />

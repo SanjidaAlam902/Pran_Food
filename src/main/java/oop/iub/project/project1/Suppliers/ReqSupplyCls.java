@@ -1,4 +1,4 @@
-package com.example.oopproject.Suppliers;
+package oop.iub.project.project1.Suppliers;
 
 public class ReqSupplyCls {
     private String materialType,reason,urgencyLevel;

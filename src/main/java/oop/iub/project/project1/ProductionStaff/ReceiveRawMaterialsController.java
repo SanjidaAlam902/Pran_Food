@@ -1,4 +1,4 @@
-package com.example.oopproject.ProductionStaff;
+package oop.iub.project.project1.ProductionStaff;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
@@ -7,7 +7,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import javax.imageio.IIOException;
+
 import java.io.*;
 import java.util.ArrayList;
 

@@ -11,7 +11,7 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="455.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.ReviewPastDeliveriesController">
+<AnchorPane prefHeight="455.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.Suppliers.ReviewPastDeliveriesController">
    <children>
       <Label layoutX="34.0" layoutY="18.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Review Past Deliveries" />
       <Label layoutX="38.0" layoutY="65.0" text="Supplier Id:" />

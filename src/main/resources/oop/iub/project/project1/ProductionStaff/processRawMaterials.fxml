@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.ProductionStaff.ProcessRawMaterialsController">
+<AnchorPane prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.ProductionStaff.ProcessRawMaterialsController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Process Raw Materials" />
       <Label layoutX="20.0" layoutY="55.0" text="Raw Material:" />

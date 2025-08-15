@@ -9,7 +9,7 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="437.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Suppliers.RequestUrgentSuppliesController">
+<AnchorPane prefHeight="437.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.iub.project.project1.Suppliers.RequestUrgentSuppliesController">
    <children>
       <Label layoutX="29.0" layoutY="23.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Request Urgent Supplies" />
       <Label layoutX="29.0" layoutY="68.0" text="Material Type:" />

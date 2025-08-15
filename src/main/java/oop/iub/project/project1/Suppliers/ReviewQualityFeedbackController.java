@@ -1,6 +1,6 @@
-package com.example.oopproject.Suppliers;
+package oop.iub.project.project1.Suppliers;
 
-import com.example.oopproject.ProductionStaff.ProductionLog;
+import oop.iub.project.project1.ProductionStaff.ProductionLog;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
